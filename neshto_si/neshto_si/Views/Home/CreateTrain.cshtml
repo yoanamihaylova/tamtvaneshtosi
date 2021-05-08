@@ -1,0 +1,15 @@
+﻿@model neshto_si.Controllers.Models.TrainVM
+<form asp-action="CreateTrain" method="post" asp-controller="Home">
+    <div class="form-group">
+        <label asp-for="capacity" class="control-label"></label>
+        <input asp-for="capacity" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="type" class="control-label"></label>
+        <input asp-for="type" class="form-control" />
+    </div>
+    <br></br>
+    <div class="form-group">
+        <input type="submit" value="create train" class="btn btn-primary" />
+    </div>
+</form>
